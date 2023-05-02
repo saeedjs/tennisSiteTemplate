@@ -1,0 +1,80 @@
+@font-face {
+    font-family: iransans;
+    src: url(fonts/IRANSansWeb\(FaNum\).woff2);
+}
+
+* {
+   direction: rtl;
+    font-size: 14px;
+    font-family: "iransans";
+    color: #1E1E1E;
+}
+
+
+input {
+    outline: none;
+}
+
+select {
+    outline: none;
+}
+
+textarea {
+    outline: none;
+}
+/* 
+.nav-link {
+    color: #1e1e1e !important;
+    border-radius: 0px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #000508;
+    color: #FFFFFF !important;
+    border: 3px solid #000508 !important;
+    min-width: 126px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link.active {
+    opacity: 100%;
+    background-color: #ffffff !important;
+    color: black !important;
+    border-bottom: 3.5px solid #ffc700;
+    font-weight: 700 !important;
+} */
+
+#plotId{left: 0px;}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.90em;
+    height: 0.90em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: #1e1e1e;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 1px solid #FFFF;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
